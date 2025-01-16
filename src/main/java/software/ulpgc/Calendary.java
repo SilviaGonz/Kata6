@@ -1,6 +1,7 @@
 package software.ulpgc;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.Iterator;
 
 public record Calendary() {
@@ -25,5 +26,9 @@ public record Calendary() {
                 };
             }
         };
+    }
+
+    public long getNumberOfDaysBetween(LocalDate fromDate, LocalDate toDate) {
+        return ChronoUnit.DAYS.between(fromDate, toDate);
     }
 }
