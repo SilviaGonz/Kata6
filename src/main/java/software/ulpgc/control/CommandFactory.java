@@ -1,4 +1,7 @@
-package software.ulpgc;
+package software.ulpgc.control;
+
+import software.ulpgc.io.Input;
+import software.ulpgc.io.Output;
 
 import java.util.HashMap;
 import java.util.Map;
